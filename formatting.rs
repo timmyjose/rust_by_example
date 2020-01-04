@@ -34,7 +34,11 @@ struct Color {
 impl fmt::Display for Color {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         let hex_value = format!("0x{:02X}{:02X}{:02X}", self.red, self.green, self.blue);
-        write!(f, "RGB ({}, {}, {}) {}", self.red, self.green, self.blue, hex_value)
+        write!(
+            f,
+            "RGB ({}, {}, {}) {}",
+            self.red, self.green, self.blue, hex_value
+        )
     }
 }
 
