@@ -36,7 +36,10 @@ fn rect_area(
 fn square(p: Point, delta: f32) -> Rectangle {
     Rectangle {
         top_left: p,
-        bottom_right: Point { x: p.x + delta, y: p.y - delta },
+        bottom_right: Point {
+            x: p.x + delta,
+            y: p.y - delta,
+        },
     }
 }
 
