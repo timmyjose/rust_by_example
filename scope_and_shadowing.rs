@@ -10,7 +10,7 @@ fn main() {
     }
 
     println!("long binding = {}", long_lived_binding);
-    
+
     let long_lived_binding = "Hello, world";
     println!("shadowed long binding = {}", long_lived_binding);
 }
