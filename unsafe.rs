@@ -25,4 +25,4 @@ fn main() {
         let my_slice = slice::from_raw_parts(ptr, len);
         assert_eq!(my_slice, some_vector.as_slice());
     }
-}
+}g
