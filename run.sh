@@ -3,5 +3,6 @@
 file="$1"
 filename="${file%.*}"
 
-rustc -O ${file} && ./${filename}
+shift
+rustc -O ${file} && ./${filename} "$@"
 rm -rf ${filename}
